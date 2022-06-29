@@ -1,0 +1,212 @@
+@import "variable";
+@import "../bootstrap-5.0.2/scss/bootstrap.scss";
+
+h2 {
+    color: $primary;
+    margin-top: 1rem;
+}
+.topbar {
+    background: $gray-800;
+    
+    a {
+        color: $white;
+        &:hover {
+            color: $gray-200;
+        }
+    }
+    .btn {
+        padding: 15px 50px;
+        border-radius: 0;
+    }
+}
+#header {
+    background-color: $white;
+    a.logo {
+        text-decoration: none;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .navbar-light {
+        .navbar-nav {
+            .nav-link {
+                font-size: 1.3rem;
+                color: $gray-800;
+                padding: 0 1rem;
+            }
+            .dropdown-menu {
+                font-size: 1.2rem;
+            }
+        }
+    }
+    .btn.btn-lg {
+        padding: 0.5rem 2rem;
+        border-radius: 2rem;
+    }
+}
+#top-banner {
+    background: url("../images/image1.jpg") center center;
+    color: $white;
+    min-height: 85vh;
+    h1 {
+        color: $secondary;
+    }
+    .item {
+        border: 2px solid $secondary;
+        padding: 10px;
+        font-size: 1.5rem;
+        transition: all 0.3s ease-in-out;
+        margin-bottom: 1rem;
+        i {
+            font-size: 2.8rem;
+        }
+        &:hover {
+            border: 2px solid $primary;
+            background-color: $primary; 
+        }
+    }
+}
+.homme-section2 {
+    .d-flex {
+        i {
+            font-size: 2.5rem;
+            padding-right: 1.7rem;
+            color: $primary;
+        }
+        margin-bottom: 1.8rem;
+    }
+}
+.homme-section3 {
+    background: url("../images/image3.jpg") center center;
+    padding: 3rem 0;
+    p {
+        color: $secondary;
+    }
+    h2 {
+        color: $white;
+    }
+}
+.homme-section4 {
+    .form {
+        padding: 1.6rem 1.9rem;
+        background: $gray-300;
+    }
+    .form-control {
+        margin-bottom: 1rem;
+    }
+    button {
+        width: 100%;
+    }
+}
+.homme-section5 {
+    background: url("../images/image4.jpg") center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    .container {
+        background-color: rgba(255, 255, 255, 0.6);
+        padding: 0;
+        .tab-content {
+            padding: 2rem;
+            li {
+                margin-bottom: 0.75rem;
+            }
+        }
+        .nav-tabs {
+            border-bottom: 2px solid $primary;
+            font-size: 1.2rem;
+            .nav-item {
+                border-right: 1px solid $primary;
+                transition: all 0.3s ease-in-out;
+                &:hover {
+                    background-color: $secondary;
+                }
+                .nav-link {
+                    border-radius: 0;
+                }
+            }
+            .nav-item:last-child {
+                border: none;
+            }
+        }
+    }
+}
+.homme-section6 {
+    .col-md-4 {
+        margin-bottom: 1.5rem;
+    }
+}
+#footer {
+    background: $gray-800;
+    color: $white;
+    padding: 3rem 0;
+    ul {
+        padding: 0;
+        list-style: none;
+    }
+    a {
+        color: $white;
+        text-decoration: none;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            color: $secondary;
+        }
+    }
+    h3 {
+        margin-bottom: 1rem;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .topbar-left .nav-item {
+        width: 50%;
+    }
+    .topbar-left li.nav-item:last-child {
+        text-align: right;
+    }
+    .topbar-right .btn-group {
+        display: flex;
+        width: 100%;
+    }
+    .topbar-right .btn-group .btn {
+        flex-grow: 5;
+    }
+    #header {
+        .container {
+            flex-wrap: wrap;
+            position: relative;
+
+            .logo {
+                width: 50%;
+            }
+            .navbar {
+                width: 50%;
+                justify-content: flex-end;
+                position: static;
+                .navbar-collapse {
+                    position: absolute;
+                    width: 100%;
+                    top: 50px;
+                    left: 0;
+                    background: $white;
+                    padding-top: 1rem;
+                    padding-bottom: 1rem;
+                    .nav-item > a {
+                        padding-top: 0.5rem;
+                        padding-bottom: 0.5rem;
+                    }
+                }
+            }
+            .btn {
+                width: 100%;
+            }
+        }
+    }
+    #top-banner {
+        h3.pb-5 {
+            padding-bottom: 0 !important;
+        }
+    }
+}
+@media only screen and (max-width: 575px) {
+    .topbar-left {
+        font-size: 0.8rem;
+    }
+}
