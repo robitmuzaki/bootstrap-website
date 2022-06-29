@@ -204,9 +204,18 @@ h2 {
             padding-bottom: 0 !important;
         }
     }
+    .github-fork {
+        display: none;
+    }
 }
 @media only screen and (max-width: 575px) {
     .topbar-left {
         font-size: 0.8rem;
     }
+}
+.github-fork {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10000;
 }
